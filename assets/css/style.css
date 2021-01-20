@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+/* 
+    font-family: 'Roboto', sans-serif; 
+    color: #0b0c17 / #ff3571 / #dddddd / #3C30FF / #FFF / #000
+*/
+
+/* =====================================
+            Global_Style
+========================================*/
+body{
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3, p{
+    margin: 0;
+}
+/*=======================================
+            Start-Header_style
+=========================================
+*/
+
+header{
+    display: flex;
+}
+
+header img{
+    padding: 5px;
+    width:40px
+}
+
+/*=======================================
+            End-Header_style
+=========================================
+*/
+
+/*=======================================
+        Start-Main_style //Global
+=========================================
+*/
+
+main{
+    margin: 0;
+}
+
+.icons{
+    width: 30px;
+}
+
+/*=======================================
+        End-Main_style
+=========================================
+*/
+
+/*=======================================
+            Start-Section_style //01
+=========================================
+*/
+
+section:nth-of-type(1){
+    display: flex;
+    background: url(../img/ilustracion1.png) right top/65% no-repeat;
+}
+
+section:nth-of-type(1) div{
+    width:25%;
+    padding: 30vh 7%;
+}
+
+section:nth-of-type(1) h1{
+    font-size: 3.5em;
+}
+
+section:nth-of-type(1) p{
+    padding-top: 30px;
+}
+
+section:nth-of-type(1) a{
+    display: inline-block;
+    padding-top: 350px;
+}
+
+.img-rocket{
+    display:inline-block;
+    width: 40px;
+}
+
+.img-people{
+    width: 55%;
+}
+
+/*=======================================
+            End-Section_style //01
+=========================================
+*/
+
+/*=======================================
+            Start-Section_style //02
+=========================================
+*/
+
+section:nth-of-type(2){
+    padding: 50vh 0;
+    background: url(../img/images.jpg) center/contain no-repeat;
+}
+
+/*=======================================
+            End-Section_style //02
+=========================================
+*/
+
+/*=======================================
+            Start-Section_style //03
+=========================================
+*/
+
+section:nth-of-type(3){
+    display: flex;
+    justify-content: center;
+    padding: 15vh 0px 10vh 0px;
+}
+
+section:nth-of-type(3) h1{
+    font-size: 4em;
+    width: 23%;
+    padding-right: 10%;
+}
+
+section:nth-of-type(3) img{
+    width: 15%;
+}
+
+section:nth-of-type(3) p{
+    width: 30%;
+    line-height: 27px;
+    align-self: flex-end;
+}
+
+/*=======================================
+            End-Section_style //03
+=========================================
+*/
+
+/*=======================================
+            Start-Section_style //04
+=========================================
+*/
+
+section:nth-of-type(4){
+    margin: 0 auto;
+    width: 63%;
+    font-size: 2.5em;
+    padding: 15vh 0px 15vh 0px;
+}
+section:nth-of-type(4) h1{
+    padding-right: 100px;
+}
+
+/*=======================================
+            End-Section_style //04
+=========================================
+*/
+
+/*=======================================
+            Start-Section_style //05
+=========================================
+*/
+
+section:nth-of-type(5){
+    display: flex;
+    justify-content: space-around;
+    padding: 10vh 0px 10vh 0px;
+}
+
+section:nth-of-type(5) div{
+    width: 20%;
+}
+
+section:nth-of-type(5) span{
+    padding-right: 10px;
+}
+
+section:nth-of-type(5) h2{
+    font-size: 1.5em;
+}
+
+section:nth-of-type(5) p{
+    line-height: 25px;
+}
+
+/*=======================================
+            End-Section_style //05
+=========================================
+*/
+
+/*=======================================
+            Start-Section_style //06
+=========================================
+*/
+
+section:nth-of-type(6){
+    display: flex;
+    justify-content: space-around;
+    padding: 10vh 0px 10vh 0px;
+}
+
+section:nth-of-type(6) div{
+    width: 20%;
+}
+
+section:nth-of-type(6) span{
+    padding-right: 10px;
+}
+
+section:nth-of-type(6) h2{
+    font-size: 1.5em;
+}
+
+section:nth-of-type(6) p{
+    line-height: 25px;
+}
+
+/*=======================================
+            End-Section_style //06
+=========================================
+*/
+
+/*=======================================
+            Start-Section_style //07
+=========================================
+*/
+
+section:nth-of-type(7){
+    text-align: center;
+    width: 40%;
+    margin: 0 auto;
+    padding: 15vh 0px 15vh 0px;
+}
+
+section:nth-of-type(7) h1{
+    font-size: 3em;
+}
+
+section:nth-of-type(7) p{
+    font-size: 1.5em;
+    padding-top: 30px;
+}
+
+/*=======================================
+            End-Section_style //07
+=========================================
+*/
+
+/*=======================================
+            Start-Section_style //08
+=========================================
+*/
+
+section:nth-of-type(8){
+    display: flex;
+    justify-content: flex-end;
+    width: 60%;
+    margin-left: 15%;
+}
+
+section:nth-of-type(8) img{
+    width: 25%;
+}
+
+section:nth-of-type(8) div{
+    margin: 0px 100px 0px 0px;
+    width: 30%
+}
+
+/*=======================================
+            End-Section_style //08
+=========================================
+*/
