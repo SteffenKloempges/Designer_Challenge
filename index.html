@@ -106,7 +106,7 @@
             <div class="step-div-width-odd">
                 <h3 class="steps-headline-color">01</h3>
                 <img class="icon-steps-size" src="assets/img/step01.svg" alt="step01">
-                <p>Find your problem</p>
+                <p><b>Find your problem</b></p>
                 <p>It has to be a problem that’s personally affecting or affected you, like finding your keys, calling a
                     taxi or even remembering something. Open your eyes, look around you carefully and pay close
                     attention to
@@ -120,7 +120,7 @@
             <div class="step-div-width-even">
                 <h3 class="steps-headline-color">02</h3>
                 <img class="icon-steps-size" src="assets/img/step02.svg" alt="step02">
-                <p>Think about the solution</p>
+                <p><b>Think about the solution</b></p>
                 <p>t's time to look for solutions. What can you do to solve these problems? It's time to think out of
                     the
                     box, grab your notebook and start writing down all the ideas that come to mind.</p>
@@ -135,7 +135,7 @@
             <div class="step-div-width-odd">
                 <h3 class="steps-headline-color">03</h3>
                 <img class="icon-steps-size" src="assets/img/step03.svg" alt="step03">
-                <p>Design your proposal</p>
+                <p><b>Design your proposal</b></p>
                 <p>How can design help solve your problem? It's time to think about features and functionality, and then
                     start designing. Don’t forget to always ask yourself: Would I actually use this?</p>
             </div>
@@ -147,7 +147,7 @@
             <div class="step-div-width-even">
                 <h3 class="steps-headline-color">04</h3>
                 <img class="icon-steps-size" src="assets/img/step04.svg" alt="step04">
-                <p>Share your work</p>
+                <p><b>Share your work</b></p>
                 <p>Share your design on instagram or dribbble with the hashtag #thedesignproject Remember to explain
                     what
                     the problem was, how you came up with the solution and how the design achieves it. Find out what
@@ -162,9 +162,9 @@
 
     <!-- start-FOOTER -->
     <footer>
-        <h1>Do you like this challenge?</h1>
-        <p>Subscribe to be the first to hear about updates, tips and recommendations!</p>
-        <form action="">
+        <h1 id="subscribe1">Do you like this challenge?</h1>
+        <p id="subscribe2">Subscribe to be the first to hear about updates, tips and recommendations!</p>
+        <form action="" id="subscribe3">
             <input type="email" name="email" id="emailInput" placeholder="Write your email here">
             <br>
             <input type="button" value="Subscribe" onclick="popUp()">
@@ -173,8 +173,20 @@
             <p>Created with Love by a WebDesigner</p>
             <img src="assets/img/love.png" alt="heart">
         </div>
-        <!-- style-popUp -->
-        <div class="popUP" id="pop-up"></div>
+        <!-- start-style-popUp -->
+        <div class="popUp-container" id="popUp-container">
+            <p>🥳</p>
+            <h3>YOUR EMAIL HAS BEEN CONFIRMED</h3>
+            <h3>THANKS FOR SUBCRIBING!</h3>
+            <p>Now we just need to comfirm your email address - please click the link in the email we sent you.
+                Thanks!
+            </p>
+            <form action="">
+                <input class="popUp-button" id="popup-button" type="button" value="BACK TO DESIGNERCHALLENGE.COM"
+                    onclick="backtowebsite()">
+            </form>
+        </div>
+        <!-- end-style-popUp -->
     </footer>
     <!-- end-FOOTER -->
     <script src="assets/js/main.js"></script>

@@ -28,10 +28,14 @@ h1, h2, h3, p{
 header{
     display: flex;
 }
-
+header div{
+    margin-left: 50px;
+}
 header img{
-    padding: 5px;
-    width:40px
+    position: fixed;
+    top: 5px;
+    left: 5px;
+    width:40px;
 }
 
 /*=======================================
@@ -74,7 +78,7 @@ main{
 */
 
 section:nth-of-type(1){
-    display: flex;    
+    display: flex;
 }
 
 section:nth-of-type(1) div{
@@ -245,7 +249,7 @@ section:nth-of-type(6) div:nth-of-type(1){
 }
 
 section:nth-of-type(6) img{
-    align-self: flex-start; 
+    align-self: flex-start;
     padding-right:20px;
 }
 
@@ -374,6 +378,7 @@ section:nth-of-type(11) p{
 
 footer{
     text-align: center;
+    position: relative;
 }
 
 footer h1{
@@ -381,20 +386,45 @@ footer h1{
     padding-bottom: 20px;
 }
 
-footer p{
+footer p:nth-child(2){
     font-size: 1.7em;
-    padding-bottom: 25px;
+    padding-bottom: 10vh;
 }
 
 footer div{
     display: flex;
     align-items: baseline;
-    margin-top: 70px;
+    margin: 15vh 0px 10px 10%;
 }
 
 footer div p{
     padding-left: 30px;
     font-size: 1rem;
+}
+
+input[type="email"]{
+    width: 20%;
+    text-align: center;
+    margin-bottom: 40px;
+    padding: 15px 0px;
+    border: 0.5px solid #dddddd;
+    border-radius: 10px;
+    outline: none;
+}
+
+input[type="button"]{
+    width: 10%;
+    background-color: #ff3571;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 15px 0px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    margin-bottom: 100px;
 }
 
 footer img{
@@ -420,47 +450,43 @@ footer img{
     }
 }
 
-input[type="email"]{
-    width: 20%;
-    text-align: center;
-    margin-bottom: 20px;
-    padding: 15px 0px;
-    border: 0.5px solid #dddddd;
-    border-radius: 10px;
-    outline: none;
-}
+/*=======================================
+            End-FOOTER_style
+=========================================
+*/
 
-input[type="button"]{
-    width: 10%;
-    background-color: #ff3571;
-    color: #fff;
-    font-family: 'Roboto', sans-serif;
-    font-size: 20px;
-    text-align: center;
-    margin-bottom: 20px;
-    padding: 15px 0px;
-    border: none;
-    border-radius: 10px;
-    outline: none;
-}
 /*=======================================
             start_popUp_style
 =========================================
 */
 
-.popUP{
+.popUp-container{
+    position: absolute;
     display: none;
+    left: 10%;
+    bottom: 25%;
+    text-align: center;
+    padding: 100px;
     height: 40vh;
     width: 50%;
-    background: rgba(0,0,0,0.8);
+    background: #fff;
+    box-shadow: 0 0 10px rgba(102,102,102, .8);
+}
+
+.popUp-container img, h3, p{
+    margin-bottom: 50px;
+}
+
+.popUp-container h3{
+    font-size: 2em;
+}
+
+#popup-button{
+    width: 40%;
+    background: #3C30FF;
 }
 
 /*=======================================
             End-popUp_style
-=========================================
-*/
-
-/*=======================================
-            End-FOOTER_style
 =========================================
 */
