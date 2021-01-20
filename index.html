@@ -27,16 +27,18 @@
                 <h1>How to become a better designer?</h1>
                 <p>A challenge to improve yout product design skills by solving problems in your daily life<span><img
                             class="icons" src="assets/img/rocket.png" alt="rocket"></span></p>
-                <a href="#">SCROLL TO SEE MORE -</a>
+                <a href="#BIG-IMG">SCROLL TO SEE MORE -</a>
             </div>
             <img class="img-people" src="assets/img/ilustracion_people.png" alt="falling-man">
         </section>
         <!-- end-section-01 -->
+
         <!-- start-BIG_IMG -->
-        <section>
+        <section id="BIG-IMG">
         </section>
         <!-- end-BIG_IMG -->
-        <!-- start-section-03 -->
+
+        <!-- start-section-03-IDEA -->
         <section>
             <h1>Every idea<span><img src="assets/img/idea.png" alt="idea"></span> starts with a need</h1>
             <p>Earlier this year (January 2018). I started to think about how I could improve my design skills and
@@ -47,43 +49,49 @@
                 problem.
             </p>
         </section>
-        <!-- end-section-03 -->
+        <!-- end-section-03_IDEA -->
+
         <!-- start-section-04 -->
         <section>
             <h1>After several weeks of sticking to this challenge, I learned a lot</h1>
         </section>
         <!-- end-section-04 -->
-        <!-- start-section-infoBox-05 -->
+
+        <!-- start-infoBox-1&2 -->
         <section>
+            <img class="icons" src="assets/img/title02.svg" alt="lamp-icon">
             <div>
-                <h2><span><img class="icons" src="assets/img/title02.svg" alt="lamp"></span>Start with asking why</h2>
+                <h2>Start with asking why</h2>
                 <p>You will start seeing things differently and coming up with more effective ways of achieving goals.
                 </p>
             </div>
+            <img class="icons" src="assets/img/title04.svg" alt="connect-icon">
             <div>
-                <h2><span><img class="icons" src="assets/img/title04.svg" alt="connect"></span>Your ideas will have more
-                    value</h2>
+                <h2>Your ideas will have more value</h2>
                 <p>By looking at problems from a different perspective, your ideas will be fresher and more valuable.
                 </p>
             </div>
         </section>
-        <!-- end-section-infoBox-05 -->
-        <!-- start-section-infoBox-06 -->
+        <!-- end-infoBox-1&2 -->
+
+        <!-- start-infoBox-3&4 -->
         <section>
+            <img class="icons" src="assets/img/title01.svg" alt="purpleHeart-icon">
             <div>
-                <h2><span><img class="icons" src="assets/img/title01.svg" alt="purpleHeart"></span>Design solutions with
-                    love</h2>
+                <h2>Design solutions with love</h2>
                 <p>Only when you experience a problem yourself do you understand the frustration of the users and
                     resolve to end it.</p>
             </div>
+            <img class="icons" src="assets/img/title03.svg" alt="pencil-icon">
             <div>
-                <h2><span><img class="icons" src="assets/img/title03.svg" alt="pencil"></span>Share and show your work
-                </h2>
-                <p>As designers, we are often afraid of showing work that’s not finished or doesn’t look perfect. You
+                <h2>Share and show your work</h2>
+                <p>As designers, we are often afraid of showing work that’s not finished or doesn’t look perfect.
+                    You
                     will learn to accept feedback and learn from it.</p>
             </div>
         </section>
-        <!-- end-section-infoBox-06 -->
+        <!-- end-infoBox-3&4 -->
+
         <!-- start-section-07 -->
         <section>
             <h1>Are you ready? Let`s go!!</h1>
@@ -91,6 +99,7 @@
                 yourself are facing and show the result to the community.</p>
         </section>
         <!-- end-section-07 -->
+
         <!-- start-STEP1 -->
         <section>
             <img class="step-big-img" src="assets/img/step01.png" alt="step01big">
@@ -105,6 +114,7 @@
             </div>
         </section>
         <!-- end-STEP1 -->
+
         <!-- start-STEP2 -->
         <section>
             <div class="step-div-width-even">
@@ -118,6 +128,7 @@
             <img class="step-big-img" src="assets/img/step02.png" alt="step02big">
         </section>
         <!-- end-STEP2 -->
+
         <!-- start-STEP3 -->
         <section>
             <img class="step-big-img" src="assets/img/step03.png" alt="step03big">
@@ -130,6 +141,7 @@
             </div>
         </section>
         <!-- end-STEP3 -->
+
         <!-- start-STEP4 -->
         <section>
             <div class="step-div-width-even">
@@ -146,18 +158,26 @@
         </section>
         <!-- end-STEP4 -->
     </main>
-    <!-- end-main -->
+    <!-- end-MAIN -->
+
+    <!-- start-FOOTER -->
     <footer>
         <h1>Do you like this challenge?</h1>
         <p>Subscribe to be the first to hear about updates, tips and recommendations!</p>
-        <input type="email" name="" id="" placeholder="Write your email here">
-        <br>
-        <input type="button" value="Subscribe">
+        <form action="">
+            <input type="email" name="email" id="emailInput" placeholder="Write your email here">
+            <br>
+            <input type="button" value="Subscribe" onclick="popUp()">
+        </form>
         <div>
             <p>Created with Love by a WebDesigner</p>
             <img src="assets/img/love.png" alt="heart">
         </div>
+        <!-- style-popUp -->
+        <div class="popUP" id="pop-up"></div>
     </footer>
+    <!-- end-FOOTER -->
+    <script src="assets/js/main.js"></script>
 </body>
 
 </html>

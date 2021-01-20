@@ -1,15 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
-/* 
-    font-family: 'Roboto', sans-serif; 
+/*
+    font-family: 'Roboto', sans-serif;
     color: #0b0c17 / #ff3571 / #dddddd / #3C30FF / #FFF / #000
 */
 
 /* =====================================
             Global_Style
 ========================================*/
+html{
+    scroll-behavior: smooth;
+}
 body{
     margin: 0;
     font-family: 'Roboto', sans-serif;
+    background: url(../img/ilustracion1.png) right top/60% no-repeat;
 }
 
 h1, h2, h3, p{
@@ -45,7 +49,7 @@ main{
 }
 
 .icons{
-    width: 30px;
+    width: 50px;
 }
 
 .steps-headline-color{
@@ -70,13 +74,12 @@ main{
 */
 
 section:nth-of-type(1){
-    display: flex;
-    background: url(../img/ilustracion1.png) right top/65% no-repeat;
+    display: flex;    
 }
 
 section:nth-of-type(1) div{
     width:25%;
-    padding: 30vh 7%;
+    padding: 40vh 7%;
 }
 
 section:nth-of-type(1) h1{
@@ -90,10 +93,26 @@ section:nth-of-type(1) p{
 section:nth-of-type(1) a{
     display: inline-block;
     padding-top: 350px;
+    text-decoration: none;
+    color: #ff3571;
+    font-weight: bold;
 }
 
 .img-people{
     width: 55%;
+    padding-bottom: 400px;
+    position: relative;
+    animation-name: falling-man;
+    animation-duration: 5s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes falling-man{
+    0% {top: 0px;}
+    25% {top: 25px;}
+    50% {top: 0px;}
+    100% {top: 25px;}
 }
 
 /*=======================================
@@ -117,7 +136,7 @@ section:nth-of-type(2){
 */
 
 /*=======================================
-            Start-Section_style //03
+            Start-Section-IDEA_style //03
 =========================================
 */
 
@@ -144,7 +163,7 @@ section:nth-of-type(3) p{
 }
 
 /*=======================================
-            End-Section_style //03
+            End-Section-IDEA_style //03
 =========================================
 */
 
@@ -170,13 +189,13 @@ section:nth-of-type(4) h1{
 */
 
 /*=======================================
-    Start-Section_infoBox_style //05
+    Start-Section_infoBox_1&2_style //05
 =========================================
 */
 
 section:nth-of-type(5){
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     padding: 10vh 0px 10vh 0px;
 }
 
@@ -184,8 +203,13 @@ section:nth-of-type(5) div{
     width: 20%;
 }
 
-section:nth-of-type(5) span{
-    padding-right: 10px;
+section:nth-of-type(5) div:nth-of-type(1){
+    padding-right: 15%;
+}
+
+section:nth-of-type(5) img{
+    align-self: flex-start;
+    padding-right: 20px;
 }
 
 section:nth-of-type(5) h2{
@@ -197,18 +221,18 @@ section:nth-of-type(5) p{
 }
 
 /*=======================================
-    End-Section_infoBox_style //05
+    End-Section_infoBox_1&2_style //05
 =========================================
 */
 
 /*=======================================
-    Start-Section_infoBox_style //06
+    Start-Section_infoBox_3&4_style //06
 =========================================
 */
 
 section:nth-of-type(6){
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     padding: 10vh 0px 10vh 0px;
 }
 
@@ -216,8 +240,13 @@ section:nth-of-type(6) div{
     width: 20%;
 }
 
-section:nth-of-type(6) span{
-    padding-right: 10px;
+section:nth-of-type(6) div:nth-of-type(1){
+    padding-right: 15%;
+}
+
+section:nth-of-type(6) img{
+    align-self: flex-start; 
+    padding-right:20px;
 }
 
 section:nth-of-type(6) h2{
@@ -229,7 +258,7 @@ section:nth-of-type(6) p{
 }
 
 /*=======================================
-    End-Section_infoBox_style //06
+    End-Section_infoBox_3&4_style //06
 =========================================
 */
 
@@ -288,9 +317,8 @@ section:nth-of-type(10) p{
 
 .step-big-img{
     width: 30%;
-    padding: 0px 15% 0px 15%; 
+    padding: 0px 15% 0px 15%;
 }
-
 
 .step-div-width-even{
     width: 30%;
@@ -336,5 +364,103 @@ section:nth-of-type(11) p{
 
 /*=======================================
             End-STEP2&4_style //09//11
+=========================================
+*/
+
+/*=======================================
+            Start-FOOTER_style
+=========================================
+*/
+
+footer{
+    text-align: center;
+}
+
+footer h1{
+    font-size: 4em;
+    padding-bottom: 20px;
+}
+
+footer p{
+    font-size: 1.7em;
+    padding-bottom: 25px;
+}
+
+footer div{
+    display: flex;
+    align-items: baseline;
+    margin-top: 70px;
+}
+
+footer div p{
+    padding-left: 30px;
+    font-size: 1rem;
+}
+
+footer img{
+    position: relative;
+    animation-name: theHearth;
+    animation-duration: 5s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes theHearth{
+    0% {
+        transform: scale(1);
+    }
+    25% {
+        transform: scale(1.1);
+    }
+    50% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.1);
+    }
+}
+
+input[type="email"]{
+    width: 20%;
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 15px 0px;
+    border: 0.5px solid #dddddd;
+    border-radius: 10px;
+    outline: none;
+}
+
+input[type="button"]{
+    width: 10%;
+    background-color: #ff3571;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 15px 0px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+}
+/*=======================================
+            start_popUp_style
+=========================================
+*/
+
+.popUP{
+    display: none;
+    height: 40vh;
+    width: 50%;
+    background: rgba(0,0,0,0.8);
+}
+
+/*=======================================
+            End-popUp_style
+=========================================
+*/
+
+/*=======================================
+            End-FOOTER_style
 =========================================
 */
