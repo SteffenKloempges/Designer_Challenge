@@ -15,6 +15,7 @@ body{
 h1, h2, h3, p{
     margin: 0;
 }
+
 /*=======================================
             Start-Header_style
 =========================================
@@ -45,6 +46,17 @@ main{
 
 .icons{
     width: 30px;
+}
+
+.steps-headline-color{
+    color: #dddddd;
+    font-size: 3.5em;
+    padding-bottom: 50px;
+}
+
+.icon-steps-size{
+    width: 40px;
+    padding-bottom: 50px;
 }
 
 /*=======================================
@@ -80,11 +92,6 @@ section:nth-of-type(1) a{
     padding-top: 350px;
 }
 
-.img-rocket{
-    display:inline-block;
-    width: 40px;
-}
-
 .img-people{
     width: 55%;
 }
@@ -95,17 +102,17 @@ section:nth-of-type(1) a{
 */
 
 /*=======================================
-            Start-Section_style //02
+            Start-BIG_IMG //02
 =========================================
 */
 
 section:nth-of-type(2){
-    padding: 50vh 0;
+    height: 100vh;
     background: url(../img/images.jpg) center/contain no-repeat;
 }
 
 /*=======================================
-            End-Section_style //02
+            End-BIG_IMG //02
 =========================================
 */
 
@@ -152,6 +159,7 @@ section:nth-of-type(4){
     font-size: 2.5em;
     padding: 15vh 0px 15vh 0px;
 }
+
 section:nth-of-type(4) h1{
     padding-right: 100px;
 }
@@ -162,7 +170,7 @@ section:nth-of-type(4) h1{
 */
 
 /*=======================================
-            Start-Section_style //05
+    Start-Section_infoBox_style //05
 =========================================
 */
 
@@ -189,12 +197,12 @@ section:nth-of-type(5) p{
 }
 
 /*=======================================
-            End-Section_style //05
+    End-Section_infoBox_style //05
 =========================================
 */
 
 /*=======================================
-            Start-Section_style //06
+    Start-Section_infoBox_style //06
 =========================================
 */
 
@@ -221,12 +229,12 @@ section:nth-of-type(6) p{
 }
 
 /*=======================================
-            End-Section_style //06
+    End-Section_infoBox_style //06
 =========================================
 */
 
 /*=======================================
-            Start-Section_style //07
+        Start-Section_style //07
 =========================================
 */
 
@@ -247,32 +255,86 @@ section:nth-of-type(7) p{
 }
 
 /*=======================================
-            End-Section_style //07
+        End-Section_style //07
 =========================================
 */
 
 /*=======================================
-            Start-Section_style //08
+    Start-STEP1&3_style //08//10
 =========================================
 */
 
 section:nth-of-type(8){
     display: flex;
-    justify-content: flex-end;
-    width: 60%;
-    margin-left: 15%;
+    justify-content: center;
+    margin: 15% 0px 20% 0px;
 }
 
-section:nth-of-type(8) img{
-    width: 25%;
+section:nth-of-type(8) p{
+    line-height: 30px;
+    font-size: 18px;
 }
 
-section:nth-of-type(8) div{
-    margin: 0px 100px 0px 0px;
-    width: 30%
+section:nth-of-type(10){
+    display: flex;
+    justify-content: center;
+    margin: 15% 0px 20% 0px;
+}
+
+section:nth-of-type(10) p{
+    line-height: 30px;
+    font-size: 18px;
+}
+
+.step-big-img{
+    width: 30%;
+    padding: 0px 15% 0px 15%; 
+}
+
+
+.step-div-width-even{
+    width: 30%;
+    margin-left: 10%;
 }
 
 /*=======================================
-            End-Section_style //08
+            End-STEP1&3_style //08//10
+=========================================
+*/
+
+/*=======================================
+            Start-STEP2&4_style //09//11
+=========================================
+*/
+
+section:nth-of-type(9){
+    display: flex;
+    justify-content: center;
+    margin: 15% 0px 20% 0px;
+}
+
+section:nth-of-type(9) p{
+    line-height: 30px;
+    font-size: 18px;
+}
+
+section:nth-of-type(11){
+    display: flex;
+    justify-content: center;
+    margin: 15% 0px 20% 0px;
+}
+
+section:nth-of-type(11) p{
+    line-height: 30px;
+    font-size: 18px;
+}
+
+.step-div-width-odd{
+    width: 30%;
+    margin-right: 10%;
+}
+
+/*=======================================
+            End-STEP2&4_style //09//11
 =========================================
 */
